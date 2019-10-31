@@ -1,5 +1,0 @@
-stages:
-- stage: Build
-
-  pool:
-    vmImage: 'Ubuntu-16.04'
