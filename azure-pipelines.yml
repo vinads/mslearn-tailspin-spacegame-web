@@ -32,6 +32,10 @@ steps:
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
+- script: 'echo "$(SonarOrganization), $(SonarProjectKey), $(SonarProjectName)"'
+  displayName: 'Get Sonar Info'
+  workingDirectory: $(wwwrootDir)
+
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
   inputs:
